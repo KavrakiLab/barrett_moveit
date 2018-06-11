@@ -3,7 +3,7 @@
     This is a format for representing semantic information about the robot structure.
     A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
 -->
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
   <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
   <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
   <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
@@ -48,7 +48,7 @@
 
   <xacro:macro name="wam_7dof_ee" params="prefix">
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="${prefix}_palm_stump" parent_link="${prefix}/wrist_palm_stump_link" group="arm"/>
+    <end_effector name="${prefix}_palm_stump" parent_link="${prefix}/wrist_palm_stump_link" group="tip"/>
     <!--<end_effector name="${prefix}_palm" parent_link="${prefix}/wrist_palm_link" group="arm"/>-->
   </xacro:macro>
 

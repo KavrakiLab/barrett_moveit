@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="wam">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="wam">
   <xacro:include filename="$(find barrett_wam_moveit_config)/config/wam_top.srdf.xacro"/>
 
   <!-- The "arm" group. 
@@ -10,19 +10,22 @@
        can't have a more general tree structure. -->
   <group name="arm">
     <!-- Include the basic WAM joints -->
-    <xacro:wam_7dof_joints prefix="$(arg prefix)"/>
+    <!--xacro:wam_7dof_joints prefix="$(arg prefix)"/-->
+    <chain base_link="wam/base_link" tip_link="wam/wrist_palm_link"/>
+
     <!-- Include an additional joint for the "empty" end-effector -->
     <xacro:if value="$(arg empty)">
       <xacro:wam_7dof_ee_joints prefix="$(arg prefix)"/>
     </xacro:if>
-
-    <!-- Include the semantic description of the hand links -->
-    <xacro:if value="$(arg hand)">
-      <xacro:bhand_joints prefix="$(arg prefix)/hand" wam_prefix="$(arg prefix)"/>
-    </xacro:if>
     <!-- Include the semantic description of the ball links -->
     <xacro:if value="$(arg ball)">
       <xacro:bball_joints prefix="$(arg prefix)/ball" wam_prefix="$(arg prefix)"/>
+    </xacro:if>
+  </group>
+  <group name="gripper">
+    <!-- Include the semantic description of the hand links -->
+    <xacro:if value="$(arg hand)">
+      <xacro:bhand_joints prefix="$(arg prefix)/bhand" wam_prefix="$(arg prefix)"/>
     </xacro:if>
   </group>
 
@@ -38,8 +41,8 @@
 
   <!-- Include the specification of the hand end-effector and collision descriptions -->
   <xacro:if value="$(arg hand)">
-    <xacro:bhand_ee prefix="$(arg prefix)/hand" wam_prefix="$(arg prefix)"/>
-    <xacro:bhand_collisions prefix="$(arg prefix)/hand" wam_prefix="$(arg prefix)"/>
+    <xacro:bhand_ee prefix="$(arg prefix)/bhand" wam_prefix="$(arg prefix)"/>
+    <xacro:bhand_collisions prefix="$(arg prefix)/bhand" wam_prefix="$(arg prefix)"/>
   </xacro:if>
 
   <!-- Include the specification of the ball end-effector and collision descriptions -->
