@@ -4,13 +4,11 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /Grid1/Offset1
         - /MotionPlanning1
-        - /MotionPlanning1/Scene Robot1
-        - /MotionPlanning1/Scene Robot1/Links1
-        - /MotionPlanning1/Planning Request1
-        - /MarkerArray1
+        - /MarkerArray1/Namespaces1
       Splitter Ratio: 0.742560029
-    Tree Height: 377
+    Tree Height: 208
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -36,7 +34,7 @@ Visualization Manager:
       Offset:
         X: 0
         Y: 0
-        Z: 0
+        Z: -0.949999988
       Plane: XY
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
@@ -76,6 +74,71 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          wam/bhand/bhand_grasp_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wam/bhand/bhand_palm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/bhand_palm_surface_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wam/bhand/finger_1/dist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_1/med_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_1/prox_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_1/tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wam/bhand/finger_2/dist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_2/med_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_2/prox_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_2/tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wam/bhand/finger_3/dist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_3/med_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_3/tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           wam/forearm_link:
             Alpha: 1
             Show Axes: false
@@ -142,7 +205,7 @@ Visualization Manager:
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
         Planning Group: arm
-        Query Goal State: true
+        Query Goal State: false
         Query Start State: false
         Show Workspace: false
         Start State Alpha: 1
@@ -169,6 +232,71 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          wam/bhand/bhand_grasp_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wam/bhand/bhand_palm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/bhand_palm_surface_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wam/bhand/finger_1/dist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_1/med_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_1/prox_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_1/tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wam/bhand/finger_2/dist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_2/med_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_2/prox_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_2/tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wam/bhand/finger_3/dist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_3/med_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wam/bhand/finger_3/tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           wam/forearm_link:
             Alpha: 1
             Show Axes: false
@@ -212,7 +340,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-        Robot Alpha: 0.5
+        Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
@@ -221,12 +349,12 @@ Visualization Manager:
       Marker Topic: /rviz_visual_tools
       Name: MarkerArray
       Namespaces:
-        Arrow: true
+        {}
       Queue Size: 100
       Value: true
   Enabled: true
   Global Options:
-    Background Color: 48; 48; 48
+    Background Color: 255; 255; 255
     Default Light: true
     Fixed Frame: world
     Frame Rate: 30
@@ -239,31 +367,71 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Class: rviz/XYOrbit
-      Distance: 5.28085661
+      Class: rviz/Orbit
+      Distance: 2.55682731
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.632727385
-        Y: 0.297525764
-        Z: -1.49005928e-08
+        X: 0.443231076
+        Y: -0.0723620728
+        Z: 0.430294782
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.599796891
+      Pitch: 0.469796181
       Target Frame: world
-      Value: XYOrbit (rviz)
-      Yaw: 5.93495131
-    Saved: ~
+      Value: Orbit (rviz)
+      Yaw: 3.74176764
+    Saved:
+      - Class: rviz/Orbit
+        Distance: 3.4884429
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.0599999987
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0.331285447
+          Y: -0.199647456
+          Z: 0.106741883
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.0500000007
+        Invert Z Axis: false
+        Name: short_column
+        Near Clip Distance: 0.00999999978
+        Pitch: 0.514796197
+        Target Frame: world
+        Value: Orbit (rviz)
+        Yaw: 0.826766372
+      - Class: rviz/Orbit
+        Distance: 2.55682731
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.0599999987
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0.443231076
+          Y: -0.0723620728
+          Z: 0.430294782
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.0500000007
+        Invert Z Axis: false
+        Name: andrewshelf
+        Near Clip Distance: 0.00999999978
+        Pitch: 0.469796181
+        Target Frame: world
+        Value: Orbit (rviz)
+        Yaw: 3.74176764
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1073
+  Height: 1101
   Help:
     collapsed: false
   Hide Left Dock: false
@@ -272,11 +440,11 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002ad000003ebfc0200000008fb000000100044006900730070006c00610079007301000000280000020e000000d700fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a0056006900650077007300000003b0000000b0000000ad00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000023c0000018e0000018300fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c007300470075006901000003d0000000430000004300ffffff00000471000003eb00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002ad00000407fc0200000008fb000000100044006900730070006c006100790073010000002800000165000000d700fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a005600690065007700730100000193000000b2000000ad00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000024b000001990000018300fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c007300470075006901000003ea000000450000004300ffffff0000048c0000040700000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   RvizVisualToolsGui:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1828
-  X: 92
+  Width: 1855
+  X: 65
   Y: 24
