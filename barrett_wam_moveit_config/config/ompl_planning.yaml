@@ -21,6 +21,11 @@ planner_configs:
     type: geometric::PRM
   PRMstarkConfigDefault:
     type: geometric::PRMstar
+  BITstarkConfigDefault:
+    type: geometric::BITstar
+  BITstarAnySolution:
+    type: geometric::BITstar
+    optimization_objective: PathLengthOptimizationObjectiveAnySolution
 arm:
   planner_configs:
     - SBLkConfigDefault
@@ -34,4 +39,6 @@ arm:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
+    - BITstarkConfigDefault
+    - BITstarAnySolution
   longest_valid_segment_fraction: 0.005
