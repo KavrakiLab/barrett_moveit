@@ -8,7 +8,7 @@ Panels:
         - /MotionPlanning1
         - /MarkerArray1/Namespaces1
       Splitter Ratio: 0.742560029
-    Tree Height: 208
+    Tree Height: 144
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -368,46 +368,26 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.55682731
+      Distance: 3.00308585
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.443231076
-        Y: -0.0723620728
-        Z: 0.430294782
+        X: 0.233209729
+        Y: 0.313770175
+        Z: 0.249289915
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.469796181
+      Pitch: 0.505203485
       Target Frame: world
       Value: Orbit (rviz)
-      Yaw: 3.74176764
+      Yaw: 3.83676219
     Saved:
-      - Class: rviz/Orbit
-        Distance: 3.4884429
-        Enable Stereo Rendering:
-          Stereo Eye Separation: 0.0599999987
-          Stereo Focal Distance: 1
-          Swap Stereo Eyes: false
-          Value: false
-        Focal Point:
-          X: 0.331285447
-          Y: -0.199647456
-          Z: 0.106741883
-        Focal Shape Fixed Size: true
-        Focal Shape Size: 0.0500000007
-        Invert Z Axis: false
-        Name: short_column
-        Near Clip Distance: 0.00999999978
-        Pitch: 0.514796197
-        Target Frame: world
-        Value: Orbit (rviz)
-        Yaw: 0.826766372
       - Class: rviz/Orbit
         Distance: 2.55682731
         Enable Stereo Rendering:
@@ -428,6 +408,46 @@ Visualization Manager:
         Target Frame: world
         Value: Orbit (rviz)
         Yaw: 3.74176764
+      - Class: rviz/Orbit
+        Distance: 3.0698297
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.0599999987
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0.338651091
+          Y: -0.155256674
+          Z: 0.0401859321
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.0500000007
+        Invert Z Axis: false
+        Name: short_column
+        Near Clip Distance: 0.00999999978
+        Pitch: 0.514796197
+        Target Frame: world
+        Value: Orbit (rviz)
+        Yaw: 0.826766372
+      - Class: rviz/Orbit
+        Distance: 3.00308585
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.0599999987
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0.233209729
+          Y: 0.313770175
+          Z: 0.249289915
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.0500000007
+        Invert Z Axis: false
+        Name: lab
+        Near Clip Distance: 0.00999999978
+        Pitch: 0.505203485
+        Target Frame: world
+        Value: Orbit (rviz)
+        Yaw: 3.83676219
 Window Geometry:
   Displays:
     collapsed: false
@@ -438,9 +458,9 @@ Window Geometry:
   Hide Right Dock: false
   MotionPlanning:
     collapsed: false
-  MotionPlanning - Trajectory Slider:
+  MotionPlanning - Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002ad00000407fc0200000008fb000000100044006900730070006c006100790073010000002800000165000000d700fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a005600690065007700730100000193000000b2000000ad00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000024b000001990000018300fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c007300470075006901000003ea000000450000004300ffffff0000048c0000040700000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b800000407fc0200000009fb000000100044006900730070006c006100790073010000002800000125000000d700fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a005600690065007700730100000153000000b2000000ad00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000020b000001d9000001cc00fffffffb00000024005200760069007a00560069007300750061006c0054006f006f006c007300470075006901000003ea000000450000004300fffffffb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004a00ffffff000004810000040700000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   RvizVisualToolsGui:
     collapsed: false
   Views:
