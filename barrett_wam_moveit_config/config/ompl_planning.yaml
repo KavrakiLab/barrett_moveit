@@ -15,12 +15,23 @@ planner_configs:
     type: geometric::RRTConnect
   RRTstarkConfigDefault:
     type: geometric::RRTstar
+  RRTstarAnySolution:
+    type: geometric::RRTstar
+    optimization_objective: PathLengthOptimizationObjectiveAnySolution
   TRRTkConfigDefault:
     type: geometric::TRRT
   PRMkConfigDefault:
     type: geometric::PRM
+  PRMAnySolution:
+    type: geometric::PRM
+    optimization_objective: PathLengthOptimizationObjectiveAnySolution
   PRMstarkConfigDefault:
     type: geometric::PRMstar
+  LazyPRMkConfigDefault:
+    type: geometryc::LazyPRM
+  FMTAnySolution:
+    type: geometric::FMT
+    optimization_objective: PathLengthOptimizationObjectiveAnySolution
   BITstarkConfigDefault:
     type: geometric::BITstar
   BITstarAnySolution:
@@ -41,4 +52,8 @@ arm:
     - PRMstarkConfigDefault
     - BITstarkConfigDefault
     - BITstarAnySolution
+    - LazyPRMkConfigDefault
+    - PRMAnySolution
+    - FMTAnySolution
+    - RRTstarAnySolution
   longest_valid_segment_fraction: 0.005
